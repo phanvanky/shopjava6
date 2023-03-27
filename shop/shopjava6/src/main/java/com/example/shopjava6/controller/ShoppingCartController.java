@@ -2,18 +2,14 @@ package com.example.shopjava6.controller;
 
 
 import org.springframework.stereotype.Controller;
-
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-public class ProductController {
-    @RequestMapping("/product/list")
-    public String list(){
-        return "/product/list";
+public class ShoppingCartController {
+    @RequestMapping("/cart/view")
+    public String view(){
+        return "/cart/view";
     }
-    @RequestMapping("/product/detail/{id}")
-    public String detail(){
-        return "/product/detail";
-    }
+
 }
